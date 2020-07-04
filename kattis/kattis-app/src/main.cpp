@@ -1,4 +1,4 @@
-#include "sample-lib/library.h"
+#include "kattis-lib/library.h"
 
 int main(int /*argc*/, char** /*argv*/) {
 	if (sample::fibbonaci<7>() != 13) {

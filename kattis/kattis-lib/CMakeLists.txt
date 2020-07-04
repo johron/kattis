@@ -1,10 +1,10 @@
-set(target_name "sample-lib")
+set(target_name "kattis-lib")
 
 set(src_precompiled
     "src/precompiled.h")
 
 set(src_include
-	"include/sample-lib/library.h")
+	"include/kattis-lib/library.h")
 
 set(src_dummy
 	"src/dummy.cpp")
@@ -29,7 +29,7 @@ target_link_libraries(${target_name} PUBLIC "compiler_warnings")
 target_link_libraries(${target_name} PUBLIC "compiler_features")
 target_link_libraries(${target_name} PUBLIC "sanitizers")
 
-set_target_properties(${target_name} PROPERTIES FOLDER "sample")
+set_target_properties(${target_name} PROPERTIES FOLDER "kattis")
 set_target_properties(${target_name} PROPERTIES LINKER_LANGUAGE CXX)
 
 target_precompile_headers(${target_name} PUBLIC ${src_precompiled})

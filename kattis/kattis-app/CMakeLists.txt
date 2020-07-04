@@ -1,4 +1,4 @@
-set(target_name "sample-app")
+set(target_name "kattis-app")
 
 set(src_precompiled
     "src/precompiled.h")
@@ -26,11 +26,11 @@ source_group("res\\textures" FILES ${res_textures})
 target_link_libraries(${target_name} PUBLIC "compiler_warnings")
 target_link_libraries(${target_name} PUBLIC "compiler_features")
 target_link_libraries(${target_name} PUBLIC "sanitizers")
-target_link_libraries(${target_name} PUBLIC "sample-lib")
+target_link_libraries(${target_name} PUBLIC "kattis-lib")
 
-target_include_directories(${target_name} PRIVATE "../sample-lib/include")
+target_include_directories(${target_name} PRIVATE "../kattis-lib/include")
 
-set_target_properties(${target_name} PROPERTIES FOLDER "sample")
+set_target_properties(${target_name} PROPERTIES FOLDER "kattis")
 set_target_properties(${target_name} PROPERTIES LINKER_LANGUAGE CXX)
 
 target_precompile_headers(${target_name} PUBLIC ${src_precompiled})

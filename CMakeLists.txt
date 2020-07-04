@@ -14,4 +14,4 @@ include("cmake/sanitizers.cmake")
 add_conan_package("gtest/1.8.1@bincrafters/stable")
 run_conan()
 
-add_subdirectory("project_name")
+add_subdirectory("kattis")
